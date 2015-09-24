@@ -1,0 +1,43 @@
+.index-list li {
+	display: block;
+	border: 1px solid red;
+	padding: 30px;
+	list-style-type: none;
+	width: 100px;
+}
+
+.emptyTarget {
+	border: 1px dashed green;
+	padding: 30px;
+	width: 100px;
+	margin-bottom: 15px;
+}
+
+.hover .emptyTarget {
+	border: 1px dashed blue;
+}
+
+.index-list {
+	display: inline-block;
+	border: 1px blue solid;
+	padding: 20px 20px 5px 20px;
+}
+
+.index-list.ui-sortable > li {
+    cursor: move;
+}
+
+.index-list > li {
+	margin-bottom: 15px;
+}
+
+.listSection {
+	display: inline-block;
+	margin-left: 30px;
+	vertical-align: top;
+}
+
+#sourceList .ui-sortable-placeholder, #targetList.static .ui-sortable-placeholder {
+	/* Prevent dragging causing an empty gap on the target drop area */
+	display: none;
+}
