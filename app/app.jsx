@@ -51,7 +51,7 @@ var rows = [
 ];
 
 
-React.render(<MainApp rows={rows} />, document.body);
+React.render(<MainApp rows={rows} />, document.getElementById("main"));
 
 
 
